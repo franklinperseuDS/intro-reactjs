@@ -1,0 +1,70 @@
+iniciar o projeto 
+npm init
+npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+
+
+
+cria na raiz do projeto os diretorios 
+public  -> index.html
+src -> index.js , style.css
+
+adicionar em package.json a linha 
+"start": "react-scripts start",
+
+pra rodar o projeto
+npm start
+Sobre a primeira aula de reacjs do professor BC 
+tive certas dificuldades de entender onde estava o diretório public e o src 
+o correto seria mostrar a estrutura de projetos por fora para que os alunos pudessem entender
+
+ao tentar aplicar o npm start não consegui, corri atrás de uns foruns e descobri que teria que criar um start no package.json 
+para ai sim poder rodar o comando, mas fora esses por menores está tudo ok .
+
+Renderização ( aula 02)
+React DOM;
+nós raíz;
+
+react usa o virtual DOM 
+
+
+Components e props
+
+função e classe;
+props;
+Composição de componentes ;
+Extração de componentes ;
+
+Estado e ciclo de vida
+
+Inicialização -> Montagem -> atualização -> Desmontagem
+
+
+Inicialização:
+    props e state
+
+Montagem:
+    component Will Mount;
+    render;
+    Component Did Mount;
+
+Atualização 
+    proprs e state 
+
+Desmontagem :
+    Component will Unmount
+
+
+Ecossistema:
+    React Router;
+    Redux;
+    Material UI;
+    Ant-design;
+    StoryBook
+    Gatsby
+    Jeast
+    React i18n Next
+
+  
+Os projetos criados no diretório devem rodar o 
+npm install 
+assim vai instalar as dependencias de projeto 
