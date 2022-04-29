@@ -55,7 +55,7 @@ Desmontagem :
 
 
 Ecossistema:
-    React Router;
+    React Router;ote
     Redux;
     Material UI;
     Ant-design;
