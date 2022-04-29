@@ -5,7 +5,7 @@ import ComponentA from './ComponentA';
 import ComponentB from './ComponentB';
 import "./style.css";
 
-function  soma(a,b)  {
+function soma(a,b)  {
     alert(a+b);
 
 }
