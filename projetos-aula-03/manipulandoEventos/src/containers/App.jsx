@@ -1,34 +1,10 @@
 import React from "react";
-
-
-
-const listCustomer = [
-    {
-        id: 1,
-        name: 'Perseu',
-        skills: ['React', 'Node', 'CSS','WebPack']
-    },
-    {
-        id: 2,
-        name: 'Thalyta',
-        skills: ['HTML', 'React Native', 'GO','JS']
-    },
-    {
-        id: 3,
-        name: 'Thomas',
-        skills: ['VB6']
-    },
-    {
-        id: 4,
-        name: 'Boris',
-        skills: ['PHP']
-    },
-];
-
+import mock from '../mock';
+import Button from '../components/Button'
 
 
 function App() {
-    const handleClick = (e, id) => {
+    const handleClick = (id) => {
         console.log('deletar cliente');
         alert(`ID ${id}`)
     }
@@ -36,27 +12,23 @@ function App() {
         return(
             <div key={`customer-${customer.id}`}>
                 <li >
-                    {customer.name} - <button onClick={(e) =>handleClick(e,customer.id)}>
-                        Deletar Client
-                    </button>
+                    {customer.name} - <Button onClick={() => handleClick(customer.id)}>Deletar o cliente </Button>
                     
                 </li>
                 {customer.skills.map(renderSkills)}
             </div>
-           
         )
     }
     
     const renderSkills = (skill,index) => <div style={{paddingLeft: '30px'}} key={`skill-${skill}-${index}`}><li >{skill}</li> </div>
         
-
     return (
         <div className="App">
             <p> Hello World!!</p>
             <p> Welcome to the jungle!!</p>
             <div>
                 <ul>
-                    {listCustomer.map(renderCustomers)}
+                    {mock.map(renderCustomers)}
                 </ul>
             </div>
         </div>
